@@ -1,0 +1,14 @@
+name: Get latest blog posts
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+jobs:
+  update-readme-with-blog:
+    name: Update profile 
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - uses: gautamkrishnar/blog-post-workflow@master
+          with:
+            feed_list: "https://0x2142.com/rss"
