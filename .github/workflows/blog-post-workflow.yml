@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://0x2142.com/author/matt/rss/"
+          feed_list: "https://0x2142.com/rss/"
